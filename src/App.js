@@ -1,11 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactImageAnnotate from "react-image-annotate";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <ReactImageAnnotate
+    labelImages
+    regionClsList={["Alpha", "Beta", "Charlie", "Delta"]}
+    regionTagList={["tag1", "tag2", "tag3"]}
+    images={[
+      {
+        src: "https://placekitten.com/408/287",
+        name: "Image 1",
+        regions: []
+      }
+    ]}
+  />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,7 +29,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
