@@ -12,7 +12,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "react-image-annotate" : "^1.8.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
